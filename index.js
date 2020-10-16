@@ -54,11 +54,11 @@ class Person {
   }
 
   poop(){
-    this.stomach = [];
+    return this.stomach;
   } 
 
-   toString(name, age){
-    return `${name}, ${age}`;
+   toString(name,age){
+    return `${this.name}, ${this.age}`;
   } 
 
 }
@@ -114,7 +114,7 @@ class Lambdasian {
   }
 
   speak(){
-    console.log(`Hello my name is ${this.name}, I am from ${this.location}`)
+    return `Hello my name is ${this.name}, I am from ${this.location}`
   }
 
 }
@@ -142,12 +142,14 @@ class Instructor extends Lambdasian {
   }
 
   demo(subject){
-    console.log(`Today we are learning about ${subject}`)
+    return `Today we are learning about ${subject}`
   }
 
   grade(stuObj,subject){
-  console.log(`${stuObj.name} received a perfect score on ${subject}`)
+  return `${stuObj.name} received a perfect score on ${subject}`
   }
+
+  
 
 }
 
